@@ -1,0 +1,23 @@
+name: StrictBroadCast
+version: '${project.version}'
+main: play.strictmc.ru.strictbroadcast.StrictBroadCast
+api-version: 1.16
+prefix: Строгие Объявления
+authors: [ parimek, StrictMC ]
+description: Объявления сервера
+website: https://strictmc.ru/
+commands:
+  playerbroadcast:
+    aliases:
+      - pbc
+      - spbc
+      - strictpbc
+      - strictplayerbroadcast
+      - splayerbroadcast
+    description: "Hahahahahhahahaha"
+    usage: "/pbc (Сообщение)"
+  sbcreload:
+    aliases:
+      - sbcr
+      - strictbroadcastreload
+    usage: "/sbcr"

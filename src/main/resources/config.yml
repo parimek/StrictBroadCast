@@ -1,0 +1,12 @@
+main:
+  #Permission: strict.playerbroadcast
+  playerbroadcast:
+    prefix: "&7(&6ОБЪЯВЛЕНИЯ&7) &2"
+    suffix: " &8Отправил игрок: &7{player}"
+    NotPermissions: "&cУ вас нет прав на использование данной команды"
+    argsZiro: "&cВы не можете отправить пустое сообщение!"
+    Sender-is-not-player-name: "CONSOLE"
+  #Permission: strict.sbcreload
+  sbcreload:
+    config-reload: "&cКонфигурация объявлений перезагружена"
+    NotPermissions: "&cУ вас нет прав на использование данной команды"
