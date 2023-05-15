@@ -1,10 +1,32 @@
 main:
   #Permission: strict.playerbroadcast
   playerbroadcast:
+    #Включить команду /pbc ?
+    enable: true
+    disable: "Команда /playerbroadcast была отключена в конфиге плагина!"
     prefix: "&7(&6ОБЪЯВЛЕНИЯ&7) &2"
-    suffix: " &8Отправил игрок: &7{player}"
+    #Если хотите убрать то просто оставьте пустое поле:
+    #suffix: ""
+    suffix: "&r &8Отправил игрок: &7{player}"
     NotPermissions: "&cУ вас нет прав на использование данной команды"
     argsZiro: "&cВы не можете отправить пустое сообщение!"
+    #Если хотите убрать то просто оставьте пустое поле:
+    #suffix-if-not-player-sender: ""
+    suffix-if-not-player-sender: "&r &8Отправлено консолью: &7{player}"
+    #Не сработает если вы в (suffix-if-not-player-sender) удалите {player}
+    Sender-is-not-player-name: "CONSOLE"
+  #Permission: strict.warning
+  warning:
+    #Включить команду /warning ?
+    enable: true
+    disable: "Команда /warning была отключена в конфиге плагина!"
+    prefix: "&7(&c&lПРЕДУПРЕЖДЕНИЕ&7) &f"
+    #Если хотите убрать то просто оставьте пустое поле:
+    #suffix: ""
+    suffix: "&r &8Отправил администратор: &7{player}"
+    NotPermissions: "&cУ вас нет прав на использование данной команды"
+    argsZiro: "&cВы не можете отправить пустое сообщение!"
+    suffix-if-not-player-sender: "&r &8Отправлено консолью: &7{player}"
     Sender-is-not-player-name: "CONSOLE"
   #Permission: strict.sbcreload
   sbcreload:

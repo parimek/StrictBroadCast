@@ -14,10 +14,14 @@ commands:
       - strictpbc
       - strictplayerbroadcast
       - splayerbroadcast
-    description: "Hahahahahhahahaha"
     usage: "/pbc (Сообщение)"
   sbcreload:
     aliases:
       - sbcr
       - strictbroadcastreload
     usage: "/sbcr"
+  warning:
+    aliases:
+      - swarning
+      - strictwarning
+    usage: "/warning (Сообщение)"

@@ -36,12 +36,12 @@ public class playerbroadcast implements CommandExecutor {
                 allxx.sendMessage(StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.prefix").replace("&", "§")
                         + " "
                         + message.replace("&", "§")
-                        + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.suffix").replace("{player}", "" + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.Sender-is-not-player-name")).replace("&", "§"));
+                        + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.suffix-if-not-player-sender").replace("{player}", "" + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.Sender-is-not-player-name")).replace("&", "§"));
             }
             sender.sendMessage(StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.prefix").replace("&", "§")
                     + " "
                     + message.replace("&", "§")
-                    + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.suffix").replace("{player}", "" + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.Sender-is-not-player-name")).replace("&", "§"));
+                    + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.suffix-if-not-player-sender").replace("{player}", "" + StrictBroadCast.inst.getConfig().getString("main.playerbroadcast.Sender-is-not-player-name")).replace("&", "§"));
             return true;
 
         }
